@@ -31,7 +31,7 @@ def posts_list(request):
     else:
         prev_url = ''
     if page.has_next():
-        next_url = '?page={}'.format(page.next_page_number)
+        next_url = '?page={}'.format(page.next_page_number())
     else:
         next_url = ''
 
